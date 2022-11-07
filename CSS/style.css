@@ -28,6 +28,7 @@ nav {
 
 .navBar {
     background-color: #2D2D2D;
+    width: 100%;
     padding-left: 15%;
     padding-right: 15%;
     box-shadow: 0px 5px 5px #2D2D2D;
@@ -452,6 +453,89 @@ footer .contact {
     padding-right: 8px;
 }
 
+.overview {
+    padding-top: 120px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    margin: 0 15% 50px;
+    background-color: #2D2D2D;
+    color: #FFFFFF;
+    box-shadow: 5px 5px 5px #2D2D2D;
+}
+
+.jumbotron {
+    margin: 0 15% 50px;
+    background-color: #2D2D2D;
+    color: #FFFFFF;
+    box-shadow: 5px 5px 5px #2D2D2D;
+    padding: 20px;
+}
+
+#lead-overview {
+    padding: 0;
+    margin-bottom: 0;
+    font-size: 24px;
+}
+
+#lifeletters-title {
+    font-size: 85px;
+}
+
+#lifeletters-brackets {
+    font-size: 110px;
+}
+
+.lead {
+    padding: 0px 155px;
+    margin-bottom: 50px;
+}
+
+.container-context h3 {
+    text-align: center;
+}
+
+.container-fluid {
+    display: flex;
+}
+
+.container {
+    border: 2px solid #30C5CB;
+    padding: 5px;
+    margin: 20px auto 50px;
+}
+
+.container ul {
+    padding: 10px 50px;
+}
+
+.row-text {
+    padding: 10px 50px;
+}
+
+.container h5 {
+    text-align: center;
+}
+
+.jumbotron-fluid .sectionHeader {
+    padding: 0;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+#overview {
+    margin: 0;
+}
+
+.jumbotron-fluid h4 {
+    margin-left: 155px;
+}
+
+.placeholder {
+    padding-left: 155px;
+    margin-bottom: 50px;
+}
+
 @media screen and (max-width: 767px) {
 
     header {
@@ -779,4 +863,3 @@ footer .contact {
         margin: -5px auto;
     }
 }
-

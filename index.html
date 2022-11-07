@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Arizonia&family=Montserrat:wght@400;500;600;700&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="./CSS/style.css">
     <script src="https://kit.fontawesome.com/644d5df2b2.js" crossorigin="anonymous"></script>
     <title>Anna Biernacki's Portfolio</title>
@@ -16,7 +17,7 @@
 
 <body>
     <header>
-        <div class="container">
+        <div class="header">
             <nav class="navBar">
                 <img src="./Images/Logox1crop.png" alt="logo">
                 <button class="hamburger" id="hamburger">
@@ -32,92 +33,194 @@
             </nav>
         </div>
     </header>
-    <section class="hero" id="hero">
-        <div class="content">
-            <h1><span>Anna</span> <span>Biernacki</span></h1>
-            <h4><span class="brackets"> >> </span>UX DESIGNER<span class="brackets"> << </span></h4>
-            <p>St.Paul-based designer, solving problems with beautiful, user-centric experiences that are seamless and impactful.</p>
-        </div>
-        <div class="contact">
-            <a href="mailto:annabiernackicvt@gmail.com" class="icon"><img src="./Images/Email.png" alt="email"></a>
-            <a href="https://www.linkedin.com/in/anna-biernacki/" class="icon"><img src="./Images/Linkedin.png" alt="linkedinLogo"></a>
-        </div>
-    </section>
-    <section class="work" id="work">
-        <h2 class="sectionHeader">PROJECTS</h2>
-        <div class="projects">
-            <div class="caseStudy">
-                <div class="caseImage" id="lifelettersImage">
-                    <img src="./Images/lifeletters-image.png" alt="lifeletters-image">
-                </div>
-                <div class="caseText">
-                    <h3 class="study"><span class="brackets"> >> </span>LIFELETTERS<span class="brackets"> << </span></h3>
-                    <p class="studyText">UX Scene designathon project that focused on building a website experience for senior/elderly users.</p>
-                    <button class="view" id="lifeletters"><span class="brackets"> >> </span>View Case Study<span class="brackets"> << </span></button>
-                </div>
+    <div class="overview jumbotron-fluid">
+        <div class="container-context">
+            <h3 class="study" id="lifeletters-title"><span class="brackets" id="lifeletters-brackets"> >> </span>LIFELETTERS<span class="brackets" id="lifeletters-brackets"> << </span></h3>
+            <h2 class="sectionHeader" id="overview">OVERVIEW</h2>
+            <div class="container-fluid">
+                <p class="lead" id="lead-overview">LifeLetters is a website designed for seniors and the elderly to help them stay connected to their families by passing on their memories, life-lessons, stories, and valuable insights into how society changed throughout their lives. <br> <br> Thanks to a simple layout and accessible user interface, elderly and seniors who don’t frequently use the web can compose and send letters with ease. </p>
+                <img class="img-fluid" src="./Images/lifeletters-image.png" alt="lifeletters-image">
             </div>
-            <div class="caseStudy" id="caseStudy2">
-                <div class="caseText">
-                    <h3 class="study"><span class="brackets"> >> </span>MARS RESCUE<span class="brackets"> << </span></h3>
-                    <p class="studyText">Group project working directly with a non-profit animal rescue to redesign their website and mobile.</p>
-                    <button class="view" id="mars"><span class="brackets"> >> </span>View Case Study<span class="brackets"> << </span></button>
-                </div>
-                <div class="caseImage" id="marsImage">
-                    <img src="./Images/mars-laptop.png" alt="mars-laptop" id="mars-laptop">
-                    <img src="./Images/mars-mobile.png" alt="mars-mobile" id="mars-mobile">
-                </div>
-            </div>
-            <div class="caseStudy" id="caseStudy3">
-                <div class="caseImage" id="travemoteImage">
-                    <img src="./Images/travemote.png" alt="travemote-mobile">
-                </div>
-                <div class="caseText">
-                    <h3 class="study"><span class="brackets"> >> </span>TRAVEMOTE<span class="brackets"> << </span></h3>
-                    <p class="studyText">First solo project completed during bootcamp connecting love of language and travel based communication into a mobile app.</p>
-                    <button class="view" id="travemote"><span class="brackets"> >> </span>View Case Study<span class="brackets"> << </span></button>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="aboutMe" id="aboutMe">
-        <h2 class="sectionHeader" id="aboutHeader">ABOUT</h2>
-        <div class="about" id="aboutDiv">
-            <div class="aboutTop">
-                <p>Previously a Certified Veterinary Technician, communication and empathy with clients and patients were key. Teamwork was priority for the clinic to run smoothly every day regardless of what came through the door. <br> <br> Taking that passion to help animals without a voice to a design career will make sure that user needs are always spoken for and made into an enjoyable experience while keeping client expectations satisfied.</p>
-            </div>
-            <div class="aboutBottom">
-                <div class="skills">
-                    <h5><span class="brackets"> >> </span>SKILLS<span class="brackets"> << </span></h5>
-                    <div class="skillsList">
-                        <div class="list">
-                            <ul>
-                                <li>Persona Creation</li>
-                                <li>User Interviews</li>
-                                <li>Affinity Diagrams</li>
-                                <li>User Flows</li>
-                                <li>Empathy Mapping</li>
-                            </ul>
-                        </div>
-                        <div class="list">
-                            <ul>
-                                <li>UI Styling</li>
-                                <li>Prototyping</li>
-                                <li>Responsive Design</li>
-                                <li>User Testing</li>
-                                <li>Interactive Design</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="tools">
+            <div class="container">
+                <div class="row">
+                  <div class="col-sm">
+                    <h5><span class="brackets"> >> </span>ROLE<span class="brackets"> << </span></h5>
+                  </div>
+                  <div class="col-sm">
                     <h5><span class="brackets"> >> </span>TOOLS<span class="brackets"> << </span></h5>
-                    <div class="toolsList">
-                        <img src="./Images/tools-img.png" alt="tool">
-                    </div>
+                  </div>
+                  <div class="col-sm">
+                    <h5><span class="brackets"> >> </span>TIME SPAN<span class="brackets"> << </span></h5>
+                  </div>
                 </div>
+                <div class="row">
+                    <div class="col-sm row-text">
+                      UX Designer
+                    </div>
+                    <div class="col-sm">
+                      <ul>
+                        <li>FIGMA</li>
+                        <li>PHOTOSHOP</li> 
+                        <li>NOTION</li>
+                      </ul>
+                    </div>
+                    <div class="col-sm row-text">
+                        UX SCENE 2022 <br>
+                        48 HOUR DESIGNATHON EVENT <br>
+                        PROMPT TO SUBMISSION
+                    </div>
+                  </div>
+              </div>
+        </div>
+      </div>
+      <div class="jumbotron jumbotron-fluid">
+        <div class="container-context">
+            <h2 class="sectionHeader">DEFINE</h2>
+            <h4><span class="brackets"> >> </span>THE PROBLEM<span class="brackets"> << </span></h4>
+            <p class="lead">Older generations of people who feel detached and isolated from their family struggle to find ways to share their feelings of suffering and lack of a sense of purpose. Elders have a lifetime of stories to share but are unsure where to start and struggle with recalling stories that are slipping away with time. </p>
+            <h4><span class="brackets"> >> </span>HOW MIGHT WE<span class="brackets"> << </span></h4>
+            <p class="lead">How might we design a website experience focusing on accessibility to the older generations who have varying degrees of technology experience while providing a traditional feel to writing letters that can be built into a collection and shared with family and future generations to come?</p>
+            <h4><span class="brackets"> >> </span>PROTO-PERSONA<span class="brackets"> << </span></h4>
+            <img class="placeholder img-fluid" src="./Images/Rectangle 817.png" alt="placeholder">
+        </div>
+      </div>
+      <div class="jumbotron jumbotron-fluid">
+        <div class="container-context">
+            <h2 class="sectionHeader">RESEARCH</h2>
+            <h4><span class="brackets"> >> </span>USER INTERVIEWS<span class="brackets"> << </span></h4>
+            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+            <h4><span class="brackets"> >> </span>ONLINE SURVEYS<span class="brackets"> << </span></h4>
+            <img class="placeholder img-fluid" src="./Images/Rectangle 817.png" alt="placeholder">
+            <div class="container">
+                <div class="row">
+                  <div class="col-sm">
+                    <h5><span class="brackets"> >> </span>MOTIVATION<span class="brackets"> << </span></h5>
+                  </div>
+                  <div class="col-sm">
+                    <h5><span class="brackets"> >> </span>USER PAINS<span class="brackets"> << </span></h5>
+                  </div>
+                  <div class="col-sm">
+                    <h5><span class="brackets"> >> </span>GOALS<span class="brackets"> << </span></h5>
+                  </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm">
+                        <ul>
+                            <li>list</li>
+                            <li>of things</li> 
+                            <li>go here</li>
+                        </ul>
+                    </div>
+                    <div class="col-sm">
+                        <ul>
+                            <li>list</li>
+                            <li>of things</li> 
+                            <li>go here</li>
+                        </ul>
+                    </div>
+                    <div class="col-sm">
+                        <ul>
+                            <li>list</li>
+                            <li>of things</li> 
+                            <li>go here</li>
+                        </ul>
+                    </div>
+                  </div>
+            </div>
+            <h4><span class="brackets"> >> </span>GENERAL RESEARCH<span class="brackets"> << </span></h4>
+            <img class="placeholder img-fluid" src="./Images/Group 566.png" alt="placeholder">
+            <h4><span class="brackets"> >> </span>COMPETITOR ANALYSIS<span class="brackets"> << </span></h4>
+            <img class="placeholder img-fluid" src="./Images/Group 566.png" alt="placeholder">
+            <h4><span class="brackets"> >> </span>COMPETITOR SUMMARY<span class="brackets"> << </span></h4>
+            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+            <h4><span class="brackets"> >> </span>RESEARCH INSIGHTS<span class="brackets"> << </span></h4>
+            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+            <h4><span class="brackets"> >> </span>KEY FEATURES<span class="brackets"> << </span></h4>
+            <div class="container">
+                <div class="row">
+                  <div class="col-sm">
+                    <h5><span class="brackets"> >> </span>NEEDS<span class="brackets"> << </span></h5>
+                  </div>
+                  <div class="col-sm">
+                    <h5><span class="brackets"> >> </span>MOTIVATION<span class="brackets"> << </span></h5>
+                  </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm">
+                        <ul>
+                            <li>list</li>
+                            <li>of things</li> 
+                            <li>go here</li>
+                        </ul>
+                    </div>
+                    <div class="col-sm">
+                        <ul>
+                            <li>list</li>
+                            <li>of things</li> 
+                            <li>go here</li>
+                        </ul>
+                    </div>
+                  </div>
             </div>
         </div>
-    </section>
+      </div>
+      <div class="jumbotron jumbotron-fluid">
+        <div class="container-context">
+            <h2 class="sectionHeader">DESIGN</h2>
+            <h4><span class="brackets"> >> </span>USER PERSONA<span class="brackets"> << </span></h4>
+            <img class="placeholder img-fluid" src="./Images/Rectangle 817.png" alt="placeholder">
+            <h4><span class="brackets"> >> </span>EMPATHY MAP<span class="brackets"> << </span></h4>
+            <img class="placeholder img-fluid" src="./Images/Rectangle 817.png" alt="placeholder">
+            <h4><span class="brackets"> >> </span>STORYBOARD<span class="brackets"> << </span></h4>
+            <img class="placeholder img-fluid" src="./Images/Rectangle 817.png" alt="placeholder">
+            <h4><span class="brackets"> >> </span>SKETCHES & LO-FIDELITY<span class="brackets"> << </span></h4>
+            <img class="placeholder img-fluid" src="./Images/Group 566.png" alt="placeholder">
+            <h4><span class="brackets"> >> </span>UI DESIGN<span class="brackets"> << </span></h4>
+            <img class="placeholder img-fluid" src="./Images/Group 566.png" alt="placeholder">
+            <h4><span class="brackets"> >> </span>UI DESIGN SUMMARY<span class="brackets"> << </span></h4>
+            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+        </div>
+      </div>
+      <div class="jumbotron jumbotron-fluid">
+        <div class="container-context">
+            <h2 class="sectionHeader">TESTING</h2>
+            <h4><span class="brackets"> >> </span>USER TESTS<span class="brackets"> << </span></h4>
+            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+            <div class="container">
+                <div class="row">
+                  <div class="col-sm">
+                    <h5><span class="brackets"> >> </span>POSITIVE<span class="brackets"> << </span></h5>
+                  </div>
+                  <div class="col-sm">
+                    <h5><span class="brackets"> >> </span>NEGATIVE<span class="brackets"> << </span></h5>
+                  </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm">
+                        <ul>
+                            <li>list</li>
+                            <li>of things</li> 
+                            <li>go here</li>
+                        </ul>
+                    </div>
+                    <div class="col-sm">
+                        <ul>
+                            <li>list</li>
+                            <li>of things</li> 
+                            <li>go here</li>
+                        </ul>
+                    </div>
+                  </div>
+            </div>
+            <h4><span class="brackets"> >> </span>FINAL SCREENS<span class="brackets"> << </span></h4>
+            <img class="placeholder img-fluid" src="./Images/Rectangle 817.png" alt="placeholder">
+            <h4><span class="brackets"> >> </span>PAIN POINTS & STRUGGLES<span class="brackets"> << </span></h4>
+            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+            <h4><span class="brackets"> >> </span>CONCLUSION<span class="brackets"> << </span></h4>
+            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+
+        </div>
+      </div>
     <footer>
         <div class="footer">
             <h6 class="footHeader">LET'S CONNECT!</h6>
