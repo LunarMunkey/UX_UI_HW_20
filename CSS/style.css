@@ -78,6 +78,7 @@ a:hover {
 
 .navItem:hover {
     color: #30C5CB;
+    text-decoration: none;
 }
 
 .active {
